@@ -44,7 +44,7 @@ INSTRUMENT_IMAGES = {
     "tru": "https://uk.yamaha.com/en/files/ycl-631ii_540x540_tcm117-1737467.jpg?impolicy=large&imwid=735&imhei=735",
     
     "clarinet": "https://assets-sb.thomann.de/f/49568/2000x2000/d0bf5c6f04/tps_1335_100448_oktuber125817-100448_crop.jpg/m/1600x0/filters:quality(90)",
-    "cla": "https://images.unsplash.com/photo-1628151556752-ef1ff9d0db39?q=80&w=400&auto=format&fit=crop",
+    "cla": "https://www.axiommusic.com.au/assets/full/AXCLEFLAT.jpg?20250707212350",
     
     "organ": "https://upload.wikimedia.org/wikipedia/commons/8/87/OrgueSaintThomasStrasbourg_a.jpg",
     "org": "https://upload.wikimedia.org/wikipedia/commons/8/87/OrgueSaintThomasStrasbourg_a.jpg",
