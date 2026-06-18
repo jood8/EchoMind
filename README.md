@@ -4,7 +4,7 @@
 
 🚀 **Live Demo:** https://echomind-smgxz62w9aud37jd9knlpw.streamlit.app/
 
-📺 **Demo Video:** https://drive.google.com/file/d/1h-CWYAxsFluQWpXH7zyef9uBliOhbrkI/view?usp=drive_link
+📺 **Demo Video:** https://drive.google.com/file/d/1HzPng8Xr-vEvgqgjxLt6gijnMkBwn-Zq/view?usp=sharing
 
 ---
 
