@@ -20,34 +20,34 @@ st.title("EchoMind")
 # ==========================================
 INSTRUMENT_IMAGES = {
     "piano": "https://s.mc-doualiya.com/media/display/81517b06-fa57-11e9-b415-005056a964fe/w:1280/p:4x3/piano_musique.jpg",
-    "pia": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=400&auto=format&fit=crop",
+    "pia": "https://s.mc-doualiya.com/media/display/81517b06-fa57-11e9-b415-005056a964fe/w:1280/p:4x3/piano_musique.jpg",
     
-    "guitar": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=400&auto=format&fit=crop",
+    "guitar": "https://guitarworks.ca/cdn/shop/products/qxdgeaeabfijj8ienidh_1600x.jpg?v=1569011154",
     "gac": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=400&auto=format&fit=crop", 
     "gel": "https://media.guitarcenter.com/is/image/MMGS7/L90659000002000-00-2000x2000.jpg", 
     
     "violin": "https://lazermusic.com.ph/cdn/shop/files/1_490f37a2-d8ad-4b5b-aa35-ac3b2286ab81.png?v=1767316420",
     "vio": "https://lazermusic.com.ph/cdn/shop/files/1_490f37a2-d8ad-4b5b-aa35-ac3b2286ab81.png?v=1767316420",
     
-    "drums": "https://images.unsplash.com/photo-1524230507669-5ff97e82bb52?q=80&w=400&auto=format&fit=crop",
+    "drums": "https://royal.az/cdn/shop/files/vad516_angle_gal.jpg?v=1770994149&width=600",
     
     "saxophone": "https://www.axiommusic.com.au/assets/full/SP1001G.jpg?20250707212350",
     "sax": "https://www.axiommusic.com.au/assets/full/SP1001G.jpg?20250707212350",
     
     "flute": "https://storage.googleapis.com/stateless-blog-g4m-co-uk/2023/10/Featured-image-The-Different-Types-of-Flutes-from-Around-the-World.jpg",
-    "flu": "https://images.unsplash.com/photo-1548332158-bfcb3cc4e87d?q=80&w=400&auto=format&fit=crop",
+    "flu": "https://storage.googleapis.com/stateless-blog-g4m-co-uk/2023/10/Featured-image-The-Different-Types-of-Flutes-from-Around-the-World.jpg",
     
     "cello": "https://www.smithsonianchambermusic.org/sites/default/files/styles/large/public/2024-03/ken2_servais.jpg?itok=TzgwyDh4",
-    "cel": "https://images.unsplash.com/photo-1516111728783-7b629054721c?q=80&w=400&auto=format&fit=crop",
+    "cel": "https://www.smithsonianchambermusic.org/sites/default/files/styles/large/public/2024-03/ken2_servais.jpg?itok=TzgwyDh4",
     
-    "trumpet": "https://upload.wikimedia.org/wikipedia/commons/8/81/WANZ_Instrument_2024-09_IMG_7737_Thein_bass_trumpet_%28crop%29.jpg",
-    "tru": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=400&auto=format&fit=crop",
+    "trumpet": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQan_IzP0D71Eg7hahQUrNm2Da5UCGoYsULa-b9HimGObNknF4eOFHKfo0&s=10",
+    "tru": "https://uk.yamaha.com/en/files/ycl-631ii_540x540_tcm117-1737467.jpg?impolicy=large&imwid=735&imhei=735",
     
     "clarinet": "https://assets-sb.thomann.de/f/49568/2000x2000/d0bf5c6f04/tps_1335_100448_oktuber125817-100448_crop.jpg/m/1600x0/filters:quality(90)",
     "cla": "https://images.unsplash.com/photo-1628151556752-ef1ff9d0db39?q=80&w=400&auto=format&fit=crop",
     
     "organ": "https://upload.wikimedia.org/wikipedia/commons/8/87/OrgueSaintThomasStrasbourg_a.jpg",
-    "org": "https://images.unsplash.com/photo-1543163459-a2a11b6605d8?q=80&w=400&auto=format&fit=crop",
+    "org": "https://upload.wikimedia.org/wikipedia/commons/8/87/OrgueSaintThomasStrasbourg_a.jpg",
     
     "voice": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=400&auto=format&fit=crop",
     "voi": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=400&auto=format&fit=crop",
