@@ -1,0 +1,14 @@
+streamlit
+librosa
+numpy
+pandas
+plotly
+torch
+torchaudio
+transformers
+datasets
+scikit-learn
+matplotlib
+seaborn
+tqdm
+kagglehub
