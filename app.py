@@ -183,7 +183,9 @@ with main_tab1:
                     genre_name, genre_conf = predict_genre(temp_filename)
                     instrument_name, instrument_conf = predict_instrument(temp_filename)
                     
-                    tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
+                    # تعديل مهم: تحويل الـ tempo إلى قيمة مفردة آمنة باستخدام .item()
+                    tempo_raw, _ = librosa.beat.beat_track(y=y, sr=sr)
+                    tempo = float(tempo_raw.item()) if hasattr(tempo_raw, "item") else float(tempo_raw)
                     
                     clean_inst_name = str(instrument_name).lower().strip()
                     instrument_img_url = INSTRUMENT_IMAGES.get(clean_inst_name, INSTRUMENT_IMAGES["default"])
@@ -206,29 +208,31 @@ with main_tab1:
                         st.metric("Estimated Tempo", f"{int(tempo)} BPM")
                     with dash_col4:
                         st.image(instrument_img_url, caption=f"Identified Class Architecture: {instrument_name.upper()}", use_container_width=True)
-                    info_tab, freq_tab = st.tabs(["Audio Information","Frequency Analysis"])
-                with info_tab:
-                    col1, col2, col3 = st.columns(3)
-                    col1.metric("Sampling Rate",f"{sr} Hz")
-                    col2.metric("Duration",f"{len(y)/sr:.2f} sec")
-                    col3.metric("Max Amplitude",f"{np.max(np.abs(y)):.4f}")
-                with freq_tab:
-                    col1, col2 = st.columns([1, 2])
-                    with col1:
-                        st.metric("Average Frequency", f"{mean_cent:.0f} Hz")
-                        st.metric("Frequency Range", f"{inst_range['min']} - {inst_range['max']} Hz")
-                        st.info(inst_range["desc"])
-                    with col2:
-                        stft_data = np.abs(librosa.stft(y))
-                        stft_db = librosa.amplitude_to_db(stft_data, ref=np.max)
-                        fig_spec, ax_spec = plt.subplots(figsize=(10, 4.5))
-                        img = librosa.display.specshow(stft_db, sr=sr, x_axis='time', y_axis='linear', ax=ax_spec, cmap='magma')                        
-                        ax_spec.set_ylim(0, 8000)
-                        ax_spec.set_title("Spectrogram")
-                        ax_spec.set_xlabel("Time (s)")
-                        ax_spec.set_ylabel("Hz")                        
-                        st.pyplot(fig_spec)
-                        
+                    
+                    # تعديل المسافات (Indentation): إدخال الـ Tabs لتظهر فقط بعد الضغط على الزر بنجاح
+                    info_tab, freq_tab = st.tabs(["Audio Information", "Frequency Analysis"])
+                    with info_tab:
+                        col1, col2, col3 = st.columns(3)
+                        col1.metric("Sampling Rate", f"{sr} Hz")
+                        col2.metric("Duration", f"{len(y)/sr:.2f} sec")
+                        col3.metric("Max Amplitude", f"{np.max(np.abs(y)):.4f}")
+                    with freq_tab:
+                        col1, col2 = st.columns([1, 2])
+                        with col1:
+                            st.metric("Average Frequency", f"{mean_cent:.0f} Hz")
+                            st.metric("Frequency Range", f"{inst_range['min']} - {inst_range['max']} Hz")
+                            st.info(inst_range["desc"])
+                        with col2:
+                            stft_data = np.abs(librosa.stft(y))
+                            stft_db = librosa.amplitude_to_db(stft_data, ref=np.max)
+                            fig_spec, ax_spec = plt.subplots(figsize=(10, 4.5))
+                            img = librosa.display.specshow(stft_db, sr=sr, x_axis='time', y_axis='linear', ax=ax_spec, cmap='magma')                        
+                            ax_spec.set_ylim(0, 8000)
+                            ax_spec.set_title("Spectrogram")
+                            ax_spec.set_xlabel("Time (s)")
+                            ax_spec.set_ylabel("Hz")                        
+                            st.pyplot(fig_spec)
+                                
         except Exception as e:
             st.error(f"Execution Exception encountered during audio parsing: {e}")
             
