@@ -5,6 +5,7 @@ pandas
 plotly
 torch
 torchaudio
+torchvision
 transformers
 datasets
 scikit-learn
