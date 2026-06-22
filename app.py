@@ -6,7 +6,7 @@ import pickle
 import torch
 import os
 import tempfile
-from transformers import AutoModelForAudioClassifications, AutoFeatureExtractor
+from transformers import AutoModelForAudioClassification, AutoFeatureExtractor
 import matplotlib.pyplot as plt
 
 # ==========================================
